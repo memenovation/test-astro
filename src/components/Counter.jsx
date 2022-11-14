@@ -1,12 +1,9 @@
 // store
 import { useCounterStore } from "@hooks/CounterStore";
-import shallow from "zustand/shallow";
 
 export const Counter = () => {
-  const { count, increment } = useCounterStore(
-    (state) => ({ count: state.count, increment: state.increment }),
-    shallow
-  );
+  const count = useCounterStore((state) => state.count);
+  const increment = useCounterStore((state) => state.increment);
   return (
     <div>
       <h3>Counter</h3>
