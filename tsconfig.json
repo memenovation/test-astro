@@ -1,0 +1,40 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@layouts/*": [
+        "src/layouts/*"
+      ],
+      "@styles/*": [
+        "src/styles/*"
+      ],
+      "@configs/*": [
+        "src/configs/*"
+      ],
+      "@Types/*": [
+        "src/types/*"
+      ],
+      "@functions/*": [
+        "src/functions/*"
+      ],
+      "@hooks/*": [
+        "src/hooks/*"
+      ],
+      "@data/*": [
+        "src/data/*"
+      ],
+      "@store/*": [
+        "src/Store/*"
+      ],
+      "@reducers/*": [
+        "src/Reducers/*"
+      ]
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
+  }
+}
